@@ -12,7 +12,7 @@ copyButton.addEventListener('click', () => {
     } else {
         navigator.clipboard.writeText(message)
         errorMessage.innerText = ""
-        // textArea.value = ""
+        textArea.value = ""
         successMessage.innerText = "Text copied to clipboard! 👍"
     }
 })
