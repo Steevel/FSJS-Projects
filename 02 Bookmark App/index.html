@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bookmark App</title>
+</head>
+
+<body class="bg-gradient-to-r from-[#6d28d9] to-[#db2777] ">
+
+    <!-- Add Bookmark  -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-12 mx-auto">
+            <div class="flex flex-col text-center w-full mb-4">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-white">Add Bookmark</h1>
+            </div>
+            <div
+                class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 md:items-end">
+                <div class="relative flex-grow w-full">
+                    <label for="full-name" class="leading-7 text-sm text-white">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative flex-grow w-full">
+                    <label for="link" class="leading-7 text-sm text-white">URL</label>
+                    <input type="url" id="link" name="link" placeholder="https://www.example.com"
+                        class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder-gray-500 focus:placeholder-gray-800">
+                </div>
+                <div type="submit" id="addButton"
+                    class="text-white text-lg text-center bg-[#6d28d9] border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded">
+                    Add</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Show Bookmarks  -->
+    <section class="text-gray-600 body-font" onload="showBookmarks()">
+
+        <div class="container px-5 py-12 mx-auto">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-center mb-4 text-white">All Bookmarks</h1>
+            <!-- <hr> -->
+            <div id="bookmarkContainer"></div>
+        </div>
+    </section>
+
+
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
