@@ -7,22 +7,28 @@ const errorMsg = document.getElementById('errorMessage');
 const successMsg = document.getElementById('successMessage');
 
 
-signUpBtn.addEventListener("click", (event) => {
+function formValidator() {
     console.log(email.value)
-    errorMsg.innerText = ""
-    // event.preventDefault();
+    // errorMsg.innerText = ""
+    // if (e.preventDefault) {
+    //     e.preventDefault();
+    // }
+    // e.returnValue = false;
     if ((userName.value.length > 0 && email.value.length > 0) && (confPassword.value !== password.value)) {
+        e.preventDefault();
         console.log("password does not match");
         errorMsg.innerText = "Password does not match";
     }
-    // else {
-    //     successMsg.innerText = "Form submitted successfully"
-    //     userName.value = "";
-    //     email.value = "";
-    //     password.value = "";
-    //     confPassword.value = "";
-    // }
-})
+    else {
+        successMsg.innerText = "Form submitted successfully"
+        // userName.value = "";
+        // email.value = "";
+        // password.value = "";
+        // confPassword.value = "";
+    }
+}
+
+signUpBtn.addEventListener("submit", formValidator(), false)
 
 
 //  12345678
