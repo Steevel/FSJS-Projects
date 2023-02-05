@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/song.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -17,13 +21,45 @@
             }
         }
     </script>
+    <link rel="stylesheet" href="./style.css">
     <title>Music Player</title>
 </head>
 
 <body class="bg-gradient-to-r from-violet-500 to-fuchsia-500">
     <div class="container mx-auto">
-        <div class="h-screen flex justify-center items-center">
-            <div class=" w-96 h-96 bg-white "></div>
+        <div class="h-screen mx-4 flex justify-center items-center">
+            <div class="p-4 w-96 h-3/4 bg-white rounded-2xl drop-shadow-lg bg-gray-800">
+                <div class="w-full h-full flex flex-col items-center justify-between">
+                    <img class="w-full h-2/4 rounded-md" src="./images/ukulele.jpg" alt="Music Cover">
+                    <h5 class="text-white text-xl my-4">Name of the song currently playing</h5>
+                    <div class="w-full flex flex-col items-center">
+
+                        <input class="w-full time-seeker mb-1" type="range" id="points" name="points" min="0" max="100">
+                        <div class="w-full flex flex-row justify-between">
+                            <p class="text-white">00:00</p>
+                            <p class="text-white">00:00</p>
+                        </div>
+
+                    </div>
+                    <div class="w-full text-white my-5 flex justify-around">
+                        <button class="">
+                            <i class="fa-solid fa-repeat fa-lg"></i>
+                        </button>
+                        <button class="">
+                            <i class="fa-solid fa-backward-step fa-2x"></i>
+                        </button>
+                        <button class="w-16 h-16 bg-gradient-to-r from-violet-500 to-fuchsia-500 p-4 rounded-full">
+                            <i class="ml-2 fa-solid fa-play fa-2x"></i>
+                        </button>
+                        <button class="">
+                            <i class="fa-solid fa-forward-step fa-2x"></i>
+                        </button>
+                        <button class="">
+                            <i class="fa-solid fa-volume-high fa-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
