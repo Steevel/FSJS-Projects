@@ -31,15 +31,16 @@
             <div class="p-4 w-96 h-3/4 rounded-2xl drop-shadow-2xl bg-gray-800">
                 <div class="w-full h-full flex flex-col items-center justify-between">
                     <img class="song-cover w-full h-2/4 md- rounded-md" src="./images/ukulele.jpg" alt="Music Cover">
-                    <h5 class="song-name text-white text-xl my-4">Name of the song currently playing</h5>
+                    <h5 class="song-name text-white text-xl">Name of the song currently playing</h5>
                     <div class="w-full flex flex-col items-center">
-                        <input class="w-full time-seeker mb-1" type="range" id="points" name="points" min="0" max="100">
+                        <input class="w-full time-seeker mb-1" type="range" id="timeline" name="points" min="0"
+                            max="100" value="0">
                         <div class="w-full flex flex-row justify-between">
                             <p class="current-time text-white">00:00</p>
                             <p class="total-time text-white">00:00</p>
                         </div>
                     </div>
-                    <div class="w-full text-white my-5 flex justify-around">
+                    <div class="w-full text-white my-5 flex justify-around items-center control-container">
                         <button class="repeat-btn">
                             <i class="fa-solid fa-repeat fa-lg"></i>
                         </button>
@@ -53,7 +54,9 @@
                         <button class="next-btn">
                             <i class="fa-solid fa-forward-step fa-2x"></i>
                         </button>
-                        <button class="volume-btn">
+                        <button class="volume-btn relative">
+                            <input class="volume-seeker mb-1 absolute -rotate-90 hidden" type="range" id="volume"
+                                name="volume" min="0" max="100" value="40">
                             <i class="fa-solid fa-volume-high fa-lg"></i>
                         </button>
                     </div>
