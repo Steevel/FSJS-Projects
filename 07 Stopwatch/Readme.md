@@ -4,7 +4,7 @@ This is a stopwatch app developed using HTML, CSS and Javascript.
 
 ## 🔗 Deployed Link
 
-[<p style="font-size: 1.5rem; font-weight:600; margin-left: 1.7em;">Live Link</p>](https://hourglass-stopwatch.netlify.app/)
+[Live Link](https://hourglass-stopwatch.netlify.app/)
 
 ## ✨ Features
 

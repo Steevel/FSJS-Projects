@@ -4,7 +4,7 @@ This is a Copy to Clipboard app developed using HTML, TailwindCSS and Javascript
 
 ## 🔗 Deployed Link
 
-[<p style="font-size: 1.5rem; font-weight:600; margin-left: 1.7em;">Live Link</p>](https://copy-to-clip-board.netlify.app/)
+[Live Link](https://copy-to-clip-board.netlify.app/)
 
 ## ✨ Features
 

@@ -4,7 +4,7 @@ This is a countdown app developed using HTML, CSS and Javascript.
 
 ## 🔗 Deployed Link
 
-[<p style="font-size: 1.5rem; font-weight:600; margin-left: 1.7em;">Live Link</p>](https://reversecounting.netlify.app/)
+[Live Link](https://reversecounting.netlify.app/)
 
 ## ✨ Features
 
